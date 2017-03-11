@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="/stylesheets/lily_main.css">
+    <title><%= @title %></title>
+  </head>
+
+  <body>
+    <img id="logo" src="/images/flower_logo.jpg" title="logo">
+    <div id="subscribe">
+      <ul>
+        <li><a href="/subscribe">Subscribe Now!</a></li>
+      </ul>
+    </div>
+    <nav class="butto">
+      <ul>
+        <li><a href="/">Home</a></li><!--
+        --><li><a href="/about_us">About Us</a></li><!--
+        --><li><a href="/products">Our Products</a></li><!--
+        --><li><a href="/philanthropy">Philanthropy</a></li><!--
+        --><li><a href="/search">Search</a></li>
+      </ul>
+    </nav>
+    
+    <%= yield %>
+
+    <footer>
+      <ul>
+        <li><a href="/form">Contact Us</a></li><!--
+        --><li><a href="/careers">Careers</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
+

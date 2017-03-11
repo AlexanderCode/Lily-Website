@@ -1,0 +1,11 @@
+<% if @products.present? %>
+<table>
+<td>Product Name</td><td>Company</td>
+<% @products.each do |product| %>
+<tr><td><a href="/products/<%= product.id %>"><%=h product.name %></a>   </td>
+<td><%=h product.company.name %></td>
+<% end %>
+<% else %>
+<p>There are no Products containing the term(s) <%= params[:search] %>.</p>
+<% end %>
+</table>
